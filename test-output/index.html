@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\spring-3.8.3-Selenium\sts-bundle\sts-3.8.3.RELEASE\workspace\WebdriverExample\src\seleniumGrid\GridDemo.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="seleniumGrid.MultiBrowser" hash-for-method="calculatepercent">calculatepercent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="seleniumGrid.MultiBrowser" hash-for-method="calculatepercent">calculatepercent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="seleniumGrid.MultiBrowser" hash-for-method="calculatepercent">calculatepercent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">seleniumGrid.MultiBrowser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculatepercent">
+                  </a> <!-- calculatepercent -->
+                  <span class="method-name">calculatepercent</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: .//*[@id=&apos;content&apos;]/p[2]/font/b
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:48:19 -0700&apos;
+System info: host: &apos;koke-TOSH&apos;, ip: &apos;192.168.99.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAPq6TEoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQN6RkH3JuMtMmw2nEIZvu407UWF8sAcrwfazE3dhvTkJiI2Nls0JPmLqPiMLwYBclJMC+qRBh2Kz8X05tOL9dnYfciiEGdG8mB7QlmGFWd+t9kbnL4b67vBiQoUO6nOIpeYNR3EXuuYftJ1K9APfd1vKSeXs2Fk0U6sBMKoK5rkf4YkNeC05DXw9bder772X14/zQgTQqaI2cwgmNyZ/3dXVqaq0sthictK/14vdRlfozRitxZSJfZpWdVBnRh2e67jjf+jbHRsBNLgWtgRcZFWSQcHGO02mbR5IrFxf5xZZXZ9r0ofbb8B7JaMf1BLBwh1hce1pQMAALUMAABQSwECFAAUAAgICAD6ukxKdYXHtaUDAAC1DAAABwAAAAAAAAAAAAAAAAAAAAAAdXNlci5qc1BLBQYAAAAAAQABADUAAADaAwAAAAA=}, appBuildId=20170125094131, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=42772, browserVersion=51.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: c776329c-0764-4da5-807e-0af2b6c2e79c
+*** Element info: {Using=xpath, value=.//*[@id=&apos;content&apos;]/p[2]/font/b}
+Command duration or timeout: 13.96 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;koke-TOSH&apos;, ip: &apos;192.168.99.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAPq6TEoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQN6RkH3JuMtMmw2nEIZvu407UWF8sAcrwfazE3dhvTkJiI2Nls0JPmLqPiMLwYBclJMC+qRBh2Kz8X05tOL9dnYfciiEGdG8mB7QlmGFWd+t9kbnL4b67vBiQoUO6nOIpeYNR3EXuuYftJ1K9APfd1vKSeXs2Fk0U6sBMKoK5rkf4YkNeC05DXw9bder772X14/zQgTQqaI2cwgmNyZ/3dXVqaq0sthictK/14vdRlfozRitxZSJfZpWdVBnRh2e67jjf+jbHRsBNLgWtgRcZFWSQcHGO02mbR5IrFxf5xZZXZ9r0ofbb8B7JaMf1BLBwh1hce1pQMAALUMAABQSwECFAAUAAgICAD6ukxKdYXHtaUDAAC1DAAABwAAAAAAAAAAAAAAAAAAAAAAdXNlci5qc1BLBQYAAAAAAQABADUAAADaAwAAAAA=}, appBuildId=20170125094131, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=42772, webdriver.remote.sessionid=a1a4f2b5-af60-4c56-a098-9bdc96d219da, browserVersion=51.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=windows_nt, cssSelectorsEnabled=true}]
+Session ID: a1a4f2b5-af60-4c56-a098-9bdc96d219da
+*** Element info: {Using=xpath, value=.//*[@id=&apos;content&apos;]/p[2]/font/b}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at seleniumGrid.MultiBrowser.calculatepercent(MultiBrowser.java:108)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;koke-TOSH&apos;, ip: &apos;192.168.99.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:142)
+	... 26 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: .//*[@id=&apos;content&apos;]/p[2]/font/b
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:48:19 -0700&apos;
+System info: host: &apos;koke-TOSH&apos;, ip: &apos;192.168.99.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAPq6TEoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQN6RkH3JuMtMmw2nEIZvu407UWF8sAcrwfazE3dhvTkJiI2Nls0JPmLqPiMLwYBclJMC+qRBh2Kz8X05tOL9dnYfciiEGdG8mB7QlmGFWd+t9kbnL4b67vBiQoUO6nOIpeYNR3EXuuYftJ1K9APfd1vKSeXs2Fk0U6sBMKoK5rkf4YkNeC05DXw9bder772X14/zQgTQqaI2cwgmNyZ/3dXVqaq0sthictK/14vdRlfozRitxZSJfZpWdVBnRh2e67jjf+jbHRsBNLgWtgRcZFWSQcHGO02mbR5IrFxf5xZZXZ9r0ofbb8B7JaMf1BLBwh1hce1pQMAALUMAABQSwECFAAUAAgICAD6ukxKdYXHtaUDAAC1DAAABwAAAAAAAAAAAAAAAAAAAAAAdXNlci5qc1BLBQYAAAAAAQABADUAAADaAwAAAAA=}, appBuildId=20170125094131, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=42772, browserVersion=51.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: c776329c-0764-4da5-807e-0af2b6c2e79c
+*** Element info: {Using=xpath, value=.//*[@id=&apos;content&apos;]/p[2]/font/b}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;koke-TOSH&apos;, ip: &apos;192.168.99.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
+	at com.sun.proxy.$Proxy9.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:187)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:33)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	... 3 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">seleniumGrid.MultiBrowser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculatepercent">
+                  </a> <!-- calculatepercent -->
+                  <span class="method-name">calculatepercent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculatepercent">
+                  </a> <!-- calculatepercent -->
+                  <span class="method-name">calculatepercent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\spring-3.8.3-Selenium\sts-bundle\sts-3.8.3.RELEASE\workspace\WebdriverExample\src\seleniumGrid\GridDemo.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;seleniumGrid.MultiBrowser&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+  &lt;test name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;seleniumGrid.MultiBrowser&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+  &lt;test name=&quot;IETest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;ie&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;seleniumGrid.MultiBrowser&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- IETest --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">FirefoxTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ChromeTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">IETest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'calculatepercent')
+data.setCell(0, 2, 'seleniumGrid.MultiBrowser')
+data.setCell(0, 3, 31677);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'calculatepercent')
+data.setCell(1, 2, 'seleniumGrid.MultiBrowser')
+data.setCell(1, 3, 20643);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'calculatepercent')
+data.setCell(2, 2, 'seleniumGrid.MultiBrowser')
+data.setCell(2, 3, 18265);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">seleniumGrid.MultiBrowser</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchbrowser(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">launchbrowser(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">launchbrowser(ie)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">calculatepercent</span>
+                <span class="method-start">55680 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calculatepercent</span>
+                <span class="method-start">59953 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">80599 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">87359 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">calculatepercent</span>
+                <span class="method-start">117078 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">135398 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

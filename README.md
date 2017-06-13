@@ -39,7 +39,7 @@ java -jar selenium-server-standalone-3.0.1.jar -role node -nodeConfig Grid-Node.
   "port": 5555,
   "register": true,
   "registerCycle": 5000,
-  "hub": "http://192.168.0.106:4444",
+  "hub": "http://192.168.0.106:4444/grid/register/",
   "nodeStatusCheckTimeout": 5000,
   "nodePolling": 5000,
   "role": "node",

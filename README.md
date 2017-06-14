@@ -21,17 +21,31 @@ java -jar selenium-server-standalone-3.0.1.jar -role node -nodeConfig Grid-Node.
     {
       "browserName": "firefox",
       "maxInstances": 5,
-      "seleniumProtocol": "WebDriver"
+      "platform": "WIN10",
+       "seleniumProtocol": "WebDriver",
+      "webdriver.gecko.driver": "geckodriver.exe"
     },
     {
       "browserName": "chrome",
       "maxInstances": 5,
-      "seleniumProtocol": "WebDriver"
+      "platform": "WIN10",
+      "seleniumProtocol": "WebDriver",
+      "webdriver.chrome.driver": "chromedriver.exe"
+    },
+    {
+      "browserName": "MicrosoftEdge",
+      "maxInstances": 5,
+      "platform": "WIN10",
+      "seleniumProtocol": "WebDriver",
+      "webdriver.edge.driver": "MicrosoftWebDriver.exe"
     },
     {
       "browserName": "internet explorer",
-      "maxInstances": 1,
-      "seleniumProtocol": "WebDriver"
+      "maxInstances": 5,
+      "platform": "WIN10",
+      "version":11,
+      "seleniumProtocol": "WebDriver",
+      "webdriver.ie.driver": "IEDriverServer.exe"
     }
   ],
   "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",

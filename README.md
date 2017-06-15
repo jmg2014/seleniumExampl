@@ -11,6 +11,11 @@ java -jar selenium-server-standalone-3.0.1.jar -role hub &
 ## Run a node
 ```java
 java -jar selenium-server-standalone-3.0.1.jar -role node -nodeConfig Grid-Node.json &
+
+Linux server
+
+yum install Xvfb
+xvfb-run java -jar selenium-server-standalone-3.0.1.jar -role node -nodeConfig Grid-Node.json &
 ``` 
 
 ## Example of a node
